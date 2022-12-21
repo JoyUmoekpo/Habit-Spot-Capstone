@@ -15,13 +15,14 @@ button {
 }
 
 main {
-   position: fixed; /* or absolute */
-   top: 37%;
-   left: 37%;
+   position: fixed;
+   top: 30%;
+   left: 30%;
 }
 
 .t-b-color {
    background-color: #2D033B;
+   position: absolute;
    width: 100%;
    height: 100px;
    left: 0px;
@@ -29,17 +30,14 @@ main {
 
 .center {
    text-align: center;
-   align-content: center;
 }
 
 .top {
    margin-bottom: 15px;
-   position: absolute;
    top: 0px;
 }
 
 .bottom {
    margin-top: 15px;
-   position: absolute;
    bottom: 0px;
 }
