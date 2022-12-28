@@ -14,10 +14,10 @@ button {
    background-color: #C147E9;
 }
 
-main {
+section {
    position: fixed;
-   top: 30%;
-   left: 30%;
+   top: 25%;
+   left: 37%;
 }
 
 .t-b-color {
@@ -27,9 +27,9 @@ main {
    height: 100px;
    left: 0px;
 }
-
 .center {
    text-align: center;
+   align-items: center;
 }
 
 .top {
