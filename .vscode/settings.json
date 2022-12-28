@@ -1,3 +1,4 @@
 {
-   "colorWheel.settings.workspaceColor": "hsl(117,96%,58%)"
+	"colorWheel.settings.workspaceColor": "hsl(117,96%,58%)",
+	"liveServer.settings.port": 5501
 }

@@ -34,11 +34,11 @@ section {
 }
 
 .top {
-   margin-bottom: 15px;
+   /* margin-bottom: 15px; */
    top: 0px;
 }
 
 .bottom {
-   margin-top: 15px;
+   /* margin-top: 15px; */
    bottom: 0px;
 }
