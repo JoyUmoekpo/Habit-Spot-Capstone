@@ -29,7 +29,7 @@ function submitHandler(e) {
 function createHabitCard(habit) {
   const habitCard = document.createElement('div')
   habitCard.classList.add('habit-card')
-  habitCard.innerHTML = `<img alt='habit image' src=${habit.image} />
+  habitCard.innerHTML = `<img alt='The User's Chosen Habit Image' src=${habit.image} />
   <p>${habit.habit}</p>
   <button onclick="deleteHabit(${habit.id})">delete</button>`
   habitsContainer.appendChild(habitCard)
