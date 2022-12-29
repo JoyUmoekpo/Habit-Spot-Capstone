@@ -20,8 +20,8 @@ a {
 }
 
 button {
-   background-color: var(--primary);
-   color: var(--black);
+   background-color: var(--secondary);
+   color: var(--white);
 }
 
 section {
