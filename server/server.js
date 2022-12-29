@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const {getHabits, deleteHabit, updateHabit, createHabit, getJournals, deleteJournal, updateJournal, createJournal} = require('./controller.js');
+const {getHabits, deleteHabit, createHabit, getJournals, deleteJournal, updateJournal, createJournal} = require('./controller.js');
 
 const app = express();
 
