@@ -1,6 +1,8 @@
 const habitsContainer = document.querySelector('#habit-container');
 const form = document.querySelector('form');
 
+const habitBtn = document.querySelector('#habit-btn');
+
 const baseURL = `http://localhost:4000/api/habits`
 
 const habitsCallback = ({data: habits}) => displayHabits(habits);
@@ -42,6 +44,6 @@ function displayHabits(arr) {
   }
 }
 
-form.addEventListener('submit', submitHandler)
+form.addEventListener('submit', submitHandler);
 
-getAllHabits()
+habitBtn.addEventListener('click', getAllHabits);
