@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,23 @@
    <link rel="icon" type="image/x-icon" href="/assets/favicon.jpg">
    <link rel="stylesheet" href="/public/styles.css">
 </head>
+
 <body>
    <div class="top t-b-color"></div>
 
    <section id="landingPage" class="center">
       
-      <header>
-         <h1>Welcome to Habit Spot!</h1>
+      <header class="center">
+         <h1>Habit Spot!</h1>
       </header>
       
-      <button id="all-habits-btn">See All Your Habits</button>
-      <button id="clear-btn">Clear Your Habits</button>
+      <section>
+
+         <button id="all-habits-btn">See All Your Habits</button>
+
+         <button id="clear-btn">Clear Your Habits</button>
+         
+      </section>
 
       <main>
 
@@ -36,15 +43,14 @@
 
       </main>
 
-      <div id="habit-container"></div>
+      <section id="habit-container"></section>
       
-
-
    </section>
-
+   
    <div class="bottom t-b-color"></div>
 
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
    <script src="/public/main.js"></script>
 </body>
+
 </html>

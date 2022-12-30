@@ -17,8 +17,17 @@ body {
 button {
    background-color: var(--secondary);
    color: var(--white);
-   padding: 10px;
+   padding: 5px;
    margin: 10px;
+   font-size: 20px;
+}
+
+input {
+   background-color: var(--gray);
+}
+
+header {
+   font-size: xx-large;
 }
 
 #landingPage {
@@ -27,8 +36,10 @@ button {
    left: 23%;
 }
 
-input {
-   background-color: var(--gray);
+#habit-container {
+   display: flex;
+   position: absolute;
+   flex-wrap: wrap;
 }
 
 .t-b-color {
@@ -50,12 +61,6 @@ input {
 .bottom {
    position: fixed;
    bottom: 0px;
-}
-
-#habit-container {
-   display: flex;
-   position: absolute;
-   flex-wrap: wrap;
 }
 
 .habit-card {
