@@ -1,7 +1,6 @@
 const habitsContainer = document.querySelector('#habit-container');
 const form = document.querySelector('form');
-
-const habitBtn = document.querySelector('#habit-btn');
+const allHabitsBtn = document.querySelector('#all-habits-btn');
 
 const baseURL = `http://localhost:4000/api/habits`
 
@@ -16,24 +15,28 @@ function submitHandler(e) {
 
   let habit = document.querySelector('#habit')
   let image = document.querySelector('#image')
+  let time = document.querySelector('#time')
 
   let bodyObj = {
       habit: habit.value,
-      image: image.value
+      image: image.value,
+      time: time.value
   }
 
   createHabit(bodyObj)
 
   habit.value = ''
   image.value = ''
+  time.value = ''
 }
 
 function createHabitCard(habit) {
   const habitCard = document.createElement('div')
   habitCard.classList.add('habit-card')
-  habitCard.innerHTML = `<img alt='The User's Chosen Habit Image' src=${habit.image} />
+  habitCard.innerHTML = `<img alt='Image' src=${habit.image} class="habit-cover" />
   <p>${habit.habit}</p>
-  <button onclick="deleteHabit(${habit.id})">delete</button>`
+  <p>${habit.time}</p>
+  <button onclick="deleteHabit(${habit.id})">Delete Habit</button>`
   habitsContainer.appendChild(habitCard)
 }
 
@@ -45,5 +48,4 @@ function displayHabits(arr) {
 }
 
 form.addEventListener('submit', submitHandler);
-
-habitBtn.addEventListener('click', getAllHabits);
+allHabitsBtn.addEventListener('click', getAllHabits);

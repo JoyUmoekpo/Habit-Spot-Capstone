@@ -10,27 +10,40 @@
 </head>
 <body>
    <div class="top t-b-color"></div>
-   <section class="center">
+
+   <section id="landingPage" class="center">
       
       <header>
-         <h1>Welcome to Joy's Habit Tracker!</h1>
+         <h1>Welcome to Habit Spot!</h1>
       </header>
-      <button id="habit-btn">See All Your Habits</button>
+      
+      <button id="all-habits-btn">See All Your Habits</button>
+      <button id="clear-btn">Clear Your Habits</button>
+
       <main>
+
          <form>
-            <input type="text" id="habit" size="23" placeholder="What habit are you working on?" />
-            <input type="text" id="image" size="23" placeholder="Add an image link if you like!"/>
+
+            <input type="text" id="habit" size="23" placeholder="Add your habit!" />
+
+            <input type="text" id="image" size="23" placeholder="Add an image here!"/>
+
             <input type="text" id="time" size="23" placeholder="For how long?"/>
-            <button id="add-btn">Add Your Habit</button>         
+            
+            <button>Add Your Habit</button>
+
          </form>
+
       </main>
 
       <div id="habit-container"></div>
-      <div id="journal-container"></div>
+      
+
 
    </section>
 
    <div class="bottom t-b-color"></div>
+
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
    <script src="/public/main.js"></script>
 </body>
