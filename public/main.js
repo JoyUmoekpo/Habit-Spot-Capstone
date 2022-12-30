@@ -1,6 +1,7 @@
 const habitsContainer = document.querySelector('#habit-container');
 const form = document.querySelector('form');
 const allHabitsBtn = document.querySelector('#all-habits-btn');
+const clearBtn = document.querySelector('#clear-btn');
 
 const baseURL = `http://localhost:4000/api/habits`
 
@@ -8,7 +9,8 @@ const habitsCallback = ({data: habits}) => displayHabits(habits);
 const errCallback = err => console.log(err.response.data);
 const getAllHabits = () => axios.get(baseURL).then(habitsCallback).catch(errCallback);
 const createHabit = body => axios.post(baseURL, body).then(habitsCallback).catch(errCallback);
-const deleteHabit = id => axios.delete(`${baseURL}/${id}`).then(habitsCallback).catch(errCallback)
+const deleteHabit = id => axios.delete(`${baseURL}/${id}`).then(habitsCallback).catch(errCallback);
+const clearHabits = () => {habitsContainer.innerHTML = ``};
 
 function submitHandler(e) {
   e.preventDefault() 
@@ -49,3 +51,4 @@ function displayHabits(arr) {
 
 form.addEventListener('submit', submitHandler);
 allHabitsBtn.addEventListener('click', getAllHabits);
+clearBtn.addEventListener('click', clearHabits);
