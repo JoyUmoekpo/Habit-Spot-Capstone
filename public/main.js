@@ -48,7 +48,7 @@ const createHabitCard = (habit) => {
   <p>${habit.habit}</p>
   <p>${habit.time}</p>
   <button onclick="deleteHabit(${habit.id})">Delete Habit</button>
-  <button onclick="alertTest()">Add Journal Entry</button>`
+  <button onclick="window.location.href='./journal.html';">Add Journal Entry</button>`
   habitsContainer.appendChild(habitCard)
 }
 
