@@ -19,7 +19,7 @@ const deleteHabit = id => axios.delete(`${baseURL}/${id}`).then(habitsCallback).
 
 const clearHabits = () => {habitsContainer.innerHTML = ``};
 
-const alert = () => {alert('Hello!')}
+const alertTest = () => alert('Hello!')
 
 const submitHandler = (e) => {
   e.preventDefault() 
@@ -48,7 +48,7 @@ const createHabitCard = (habit) => {
   <p>${habit.habit}</p>
   <p>${habit.time}</p>
   <button onclick="deleteHabit(${habit.id})">Delete Habit</button>
-  <button onclick="alert()">Add Journal Entry</button>`
+  <button onclick="alertTest()">Add Journal Entry</button>`
   habitsContainer.appendChild(habitCard)
 }
 
