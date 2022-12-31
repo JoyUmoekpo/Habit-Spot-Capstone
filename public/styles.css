@@ -27,6 +27,10 @@ input {
    background-color: var(--gray);
 }
 
+textarea {
+   background-color: var(--gray);
+}
+
 header {
    font-size: large;
    color: var(--white);
@@ -48,6 +52,40 @@ header {
    flex-wrap: wrap;
    position: absolute;
    padding: 13px;
+}
+
+#home {
+   background-color: var(--tertiary);
+   border-radius: 50%;
+   padding: 25px;
+   text-align: center;
+   width: 55px;
+   color: var(--white);
+}
+
+#journalForm {
+   background-color: var(--tertiary);
+   padding: 30px;
+   margin-top: 50px;
+   position: absolute;
+   top: 10%;
+   border-radius: 12px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
+#entry {
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+}
+
+#journalContainer {
+   position: absolute;
+   width: 770px;
+   height: 465px;
+   top: 18%;
+   left: 30%;
 }
 
 .center {

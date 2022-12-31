@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Journal Entries</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.jpg" />
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div id="home" onclick="window.location.href='./index.html';">Home</div>
+
+    <section id="journalForm">
+      <header><h1>New Journal Entry</h1></header>
+
+      <form>
+        <input type="text" placeholder="Habit Name" id="entry">
+        <input type="text" placeholder="Date" id="entry">
+        <input type="text" placeholder="Time" id="entry">
+        <textarea name="journalText" id="journalText" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+        <br>
+        <button>Submit</button>
+      </form>
+
+    </section>
+
+    <aside id="journalContainer"></aside>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/public/main.js"></script>
+  </body>
+</html>
