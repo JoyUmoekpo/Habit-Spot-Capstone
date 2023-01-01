@@ -47,8 +47,9 @@ const createHabitCard = (habit) => {
   habitCard.innerHTML = `<img alt='Image' src=${habit.image} class="habit-cover" />
   <p>${habit.habit}</p>
   <p>${habit.time}</p>
+  <button onclick="window.location.href='./journal.html';">Add Journal Entry</button>
   <button onclick="deleteHabit(${habit.id})">Delete Habit</button>
-  <button onclick="window.location.href='./journal.html';">Add Journal Entry</button>`
+  `
   habitsContainer.appendChild(habitCard)
 }
 
