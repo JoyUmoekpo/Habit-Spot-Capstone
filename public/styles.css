@@ -8,7 +8,7 @@
 }
 
 body {
-   color: var(--secondary);
+   color: var(--white);
    background-image: url(/assets/background-image-12.jpg);
    background-repeat: no-repeat;
    background-size: 1200px 700px;
@@ -104,6 +104,7 @@ header {
 
 .habit-card {
    background-color: var(--primary);
+   color: var(--secondary);
    width: 150px;
    margin: 10px;
    align-items: center;
