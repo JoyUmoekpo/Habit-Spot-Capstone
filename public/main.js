@@ -55,7 +55,7 @@ const createHabitCard = (habit) => {
   <button onclick="updateHabit(${habit.id}, 'plus')" id="days" type="plus">+</button>
 
 
-  <button onclick="window.location.href='./journal.html';">Add Journal Entry</button>
+  <button onclick="window.location.href='./journal.html'">Add Journal Entry</button>
 
   <button onclick="deleteHabit(${habit.id})">Delete Habit</button>
   `;

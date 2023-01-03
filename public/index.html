@@ -23,8 +23,23 @@
         }
       }
 
+      #explanation {
+          animation: explanationFadeIn ease-in 5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+
+      @keyframes explanationFadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
       #trackPageBtn {
-          animation: trackPageFadeIn ease-in 15s;
+          animation: trackPageFadeIn ease-in 7s;
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
       }
@@ -50,7 +65,7 @@
     
   <p id="explanation" class="primary-border">With this web application, you will be able to track your habits and the days you were able to keep up with them. Then, after creating your habit, you'll be able to make a journal entry about your habit for the day. Click on the button below to go to the tracker page.</p>
 
-  <button id="trackPageBtn" onclick="window.location.href='./tracker.html';"">Go to Tracker Page</button>
+  <button id="trackPageBtn" onclick="window.location.href='./tracker.html'">Go to Tracker Page</button>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/public/main.js"></script>
