@@ -1,5 +1,5 @@
 const habitsContainer = document.querySelector("#habit-container");
-const form = document.querySelector("form");
+const habitForm = document.querySelector("#habitForm");
 const allHabitsBtn = document.querySelector("#all-habits-btn");
 
 const baseURL = `http://localhost:4000/api/habits`;
@@ -21,12 +21,13 @@ const createHabit = (body) =>
 const deleteHabit = (id) =>
 	axios.delete(`${baseURL}/${id}`).then(habitsCallback).catch(errCallback);
 
-const submitHandler = (e) => {
+const habitSubmitHandler = (e) => {
 	e.preventDefault();
 
 	let habit = document.querySelector("#habit");
 	let image = document.querySelector("#image");
 	let time = document.querySelector("#time");
+	let days = document.querySelector("#days");
 
 	let bodyObj = {
 		habit: habit.value,
@@ -50,9 +51,12 @@ const createHabitCard = (habit) => {
 	habitCard.innerHTML = `<img alt='Image' src=${habit.image} class="habit-cover" />
   <p>${habit.habit}</p>
   <p>${habit.time}</p>
-  <p id="days">Days: ${habit.days}</p>
+  <p>Days: ${habit.days}</p>
   <button onclick="updateHabit(${habit.id}, 'plus')" id="days" type="plus">+</button>
+
+
   <button onclick="window.location.href='./journal.html';">Add Journal Entry</button>
+
   <button onclick="deleteHabit(${habit.id})">Delete Habit</button>
   `;
 	habitsContainer.appendChild(habitCard);
@@ -65,5 +69,5 @@ const displayHabits = (arr) => {
 	}
 };
 
-form.addEventListener("submit", submitHandler);
+habitForm.addEventListener("submit", habitSubmitHandler);
 allHabitsBtn.addEventListener("click", getAllHabits);
