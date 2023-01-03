@@ -9,12 +9,12 @@
 
   <style>
       #welcome {
-          animation: fadeInAnimation ease 3s;
+          animation: welcomeFadeIn ease-in 3s;
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
       }
       
-      @keyframes fadeInAnimation {
+      @keyframes welcomeFadeIn {
         0% {
           opacity: 0;
         }
@@ -22,18 +22,35 @@
           opacity: 1;
         }
       }
+
+      #trackPage {
+          animation: trackPageFadeIn ease-in 15s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+
+      @keyframes trackPageFadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
   </style>
 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><body>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.jpg" />
   <link rel="stylesheet" href="/public/styles.css" />
 </head>
 
 <body onload="document.body.style.opacity='1'">
-  <header id="welcome">
+  <header id="welcome" class="center">
     <h1>Welcome to Habit Spot, the habit tracker application!</h1>
-  </header>
+    </header>
+    
+    <p id="explanation">Here is my web application.</p>
 
-  <button>Go to Tracker Page</button>
+  <button id="trackPage">Go to Tracker Page</button>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/public/main.js"></script>

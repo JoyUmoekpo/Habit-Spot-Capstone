@@ -38,13 +38,19 @@ header {
 
 #welcome {
    background-color: var(--tertiary);
-   padding: 25px;
+   padding: 15px;
    position: absolute;
    top: 40%;
    left: 15%;
    border-radius: 12px;
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
+}
+
+#explanation {
+   position: absolute;
+   top: 55%;
+   left: 33%;
 }
 
 #tracker {
