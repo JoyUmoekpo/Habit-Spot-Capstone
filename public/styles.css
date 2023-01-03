@@ -47,16 +47,16 @@ header {
 #explanation {
    background-color: var(--tertiary);
    position: absolute;
-   padding: 11px;
+   padding: 8px;
    text-align:left;
    width: 750px;
-   top: 58%;
+   top: 57%;
    left: 18%;
 }
 
 #trackPageBtn {
    position: absolute;
-   top: 77%;
+   top: 80%;
    left: 44%;
 }
 

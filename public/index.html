@@ -36,6 +36,7 @@
         100% {
           opacity: 1;
         }
+      }
   </style>
 
   <link rel="icon" type="image/x-icon" href="/assets/favicon.jpg" />
@@ -47,9 +48,9 @@
     <h1>Welcome to Habit Spot, the habit tracker application!</h1>
   </header>
     
-  <p id="explanation" class="primary-border">With this web application, you will be able to track your habits and the days you were able to keep up with them. Then, after creating your habit, you'll be able to make a journal entry about your habit for the day.</p>
+  <p id="explanation" class="primary-border">With this web application, you will be able to track your habits and the days you were able to keep up with them. Then, after creating your habit, you'll be able to make a journal entry about your habit for the day. Click on the button below to go to the tracker page.</p>
 
-  <button id="trackPageBtn">Go to Tracker Page</button>
+  <button id="trackPageBtn" onclick="window.location.href='./tracker.html';"">Go to Tracker Page</button>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/public/main.js"></script>
