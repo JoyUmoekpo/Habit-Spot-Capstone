@@ -48,9 +48,15 @@ header {
 }
 
 #explanation {
-   position: absolute;
+   position: fixed;
    top: 55%;
-   left: 33%;
+   left: 40%;
+}
+
+#trackPageBtn {
+   position: fixed;
+   top: 65%;
+   left: 45%;
 }
 
 #tracker {
