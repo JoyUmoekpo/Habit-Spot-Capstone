@@ -36,7 +36,7 @@ header {
    color: var(--white);
 }
 
-#landingPage {
+#tracker {
    background-color: var(--tertiary);
    padding: 10px;
    position: absolute;
