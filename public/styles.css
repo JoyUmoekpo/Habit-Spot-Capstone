@@ -36,6 +36,17 @@ header {
    color: var(--white);
 }
 
+#welcome {
+   background-color: var(--tertiary);
+   padding: 25px;
+   position: absolute;
+   top: 40%;
+   left: 15%;
+   border-radius: 12px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
 #tracker {
    background-color: var(--tertiary);
    padding: 10px;
