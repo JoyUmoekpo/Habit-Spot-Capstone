@@ -48,6 +48,7 @@ header {
 }
 
 #explanation {
+   background-color: var(--tertiary);
    position: fixed;
    top: 55%;
    left: 40%;
