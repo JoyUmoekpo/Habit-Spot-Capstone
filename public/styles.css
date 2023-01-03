@@ -38,26 +38,26 @@ header {
 
 #welcome {
    background-color: var(--tertiary);
-   padding: 15px;
    position: absolute;
+   padding: 15px;
    top: 40%;
    left: 15%;
-   border-radius: 12px;
-   border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
 }
 
 #explanation {
    background-color: var(--tertiary);
-   position: fixed;
-   top: 55%;
-   left: 40%;
+   position: absolute;
+   padding: 11px;
+   text-align:left;
+   width: 750px;
+   top: 58%;
+   left: 18%;
 }
 
 #trackPageBtn {
-   position: fixed;
-   top: 65%;
-   left: 45%;
+   position: absolute;
+   top: 77%;
+   left: 44%;
 }
 
 #tracker {
@@ -66,9 +66,6 @@ header {
    position: absolute;
    top: 10%;
    left: 20%;
-   border-radius: 12px;
-   border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
 }
 
 #habit-container {
@@ -93,9 +90,6 @@ header {
    margin-top: 50px;
    position: absolute;
    top: 10%;
-   border-radius: 12px;
-   border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
 }
 
 #entry {
@@ -124,6 +118,12 @@ header {
 .bottom {
    position: fixed;
    bottom: 0px;
+}
+
+.primary-border {
+   border-radius: 12px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
 }
 
 .habit-card {
