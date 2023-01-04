@@ -1,4 +1,6 @@
-let newTheme = document.querySelector("#themes")
+let theme1 = document.querySelector("#theme1")
+let theme2 = document.querySelector("#theme2")
+let theme3 = document.querySelector("#theme3")
 
 // const changeTheme = () => {
 //   const theme1 = "background-image-1.jpg";

@@ -9,7 +9,7 @@
 
 body {
    color: var(--white);
-   background-image: url(/assets/background-image-2.jpg);
+   background-image: url(/assets/background-image-4.jpg);
    background-repeat: no-repeat;
    background-size: 1200px 700px;
    font-weight: bold;
@@ -24,7 +24,7 @@ button {
    padding: 5px;
    /* may change following later */
    border-radius: 3px;
-   border: 1px solid var(--primary);
+   border: none;
 }
 
 button:hover {
@@ -96,7 +96,7 @@ header {
    height: 60px;
 }
 
-#themeBtn {
+.themeBtn {
    border-radius: 50%;
    font-size: small;
    width: 60px;
