@@ -77,7 +77,7 @@ const habitSubmitHandler = (e) => {
 	habit.value = "";
 	image.value = "";
 	time.value = "";
-	days.value = 0;
+	days.value = 1;
 };
 
 const createHabitCard = (habit) => {
