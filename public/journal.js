@@ -1,6 +1,6 @@
-const journalContainer = document.querySelector('#journal-container');
-const journalForm = document.querySelector('#newEntryBtn');
-const allJournalsBtn = document.querySelector('#exampleEntry');
+const journalContainer = document.querySelector("#journal-container");
+const journalForm = document.querySelector("#newEntryBtn");
+const allJournalsBtn = document.querySelector("#exampleEntry");
 
 const journalBaseURL = `http://localhost:4000/api/journals`;
 
@@ -53,10 +53,10 @@ const createJournalCard = (journal) => {
 	const journalCard = document.createElement("div");
 	journalCard.classList.add("journal-card");
 	journalCard.innerHTML =`
-  <p>${journal.habit}</p>;
-  <p>${journal.date}</p>;
-  <p>${journal.time}</p>;
-  <p>${journal.text}</p>;
+  <p>${journal.habit}</p>
+  <p>${journal.date}</p>
+  <p>${journal.time}</p>
+  <p>${journal.text}</p>
   `;
 	journalContainer.appendChild(journalCard);
 };
