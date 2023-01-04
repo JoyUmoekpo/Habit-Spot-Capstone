@@ -1,5 +1,6 @@
 const habits = require("./db.json");
-let globalId = 2;
+let habitId = 2;
+let journalId = 1;
 
 module.exports = {
 	getHabits: (req, res) => {
@@ -9,17 +10,17 @@ module.exports = {
 		let { habit, image, time, days } = req.body;
 
 		let newHabit = {
-			id: globalId,
+			id: habitId,
 			habit,
 			image,
 			time,
-            days
+      days
 		};
 
 		habits.push(newHabit);
 
 		res.status(200).send(habits);
-		globalId++;
+		habitId++;
 	},
 	updateHabit: (req, res) => {
 		let { habitId: id } = req.params;
@@ -49,4 +50,21 @@ module.exports = {
 		habits.splice(habitIndex, 1);
 		res.status(200).send(habits);
 	},
+	createJournal: (req, res) => {
+		let { habit, date, time, text } = req.body;
+	
+		let newJournal = {
+			id: journalId,
+			habit,
+			date,
+			time,
+			text
+		};
+	
+		journals.push(newJournal);
+	
+		res.status(200).send(journals);
+		journalId++;
+	}
+	
 };

@@ -84,18 +84,12 @@ header {
    color: var(--white);
 }
 
-#journalForm {
+#journalInput {
    background-color: var(--tertiary);
    padding: 30px;
    margin-top: 50px;
    position: absolute;
    top: 10%;
-}
-
-#entry {
-   display: flex;
-   flex-direction: column;
-   margin: 20px;
 }
 
 #journalContainer {
@@ -142,4 +136,21 @@ header {
    height: 100px;
    border-top-left-radius: 12px;
    border-top-right-radius: 12px;
+}
+
+.entry {
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+}
+
+.journal-card {
+   background-color: var(--primary);
+   color: var(--secondary);
+   width: 160px;
+   margin: 10px;
+   align-items: center;
+   border-radius: 12px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
 }
