@@ -1,6 +1,8 @@
 const habits = require("./habitdb.json");
+const journals = require("./journaldb.json");
+
 let habitId = 2;
-let journalId = 1;
+let journalId = 2;
 
 module.exports = {
 	getHabits: (req, res) => {
@@ -50,6 +52,9 @@ module.exports = {
 		habits.splice(habitIndex, 1);
 		res.status(200).send(habits);
 	},
+	getJournals: (req, res) => {
+		res.status(200).send(journals);
+	},
 	createJournal: (req, res) => {
 		let { habit, date, time, text } = req.body;
 	
@@ -66,5 +71,4 @@ module.exports = {
 		res.status(200).send(journals);
 		journalId++;
 	}
-	
 };

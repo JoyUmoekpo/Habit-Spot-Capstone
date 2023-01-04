@@ -92,7 +92,8 @@ header {
    top: 10%;
 }
 
-#journalContainer {
+#journal-container {
+   background-color: var(--tertiary);
    position: absolute;
    width: 770px;
    height: 465px;

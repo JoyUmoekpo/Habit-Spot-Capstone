@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,31 +9,39 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.jpg" />
     <link rel="stylesheet" href="/public/styles.css" />
   </head>
+  
   <body>
     <div id="home" onclick="window.location.href='./index.html'">Home</div>
 
     <section id="journalInput" class="primary-border">
+      
+      <button id="exampleEntry">See Example Journal Entry</button>
+
       <header><h1>New Journal Entry</h1></header>
 
-      <form id="journalForm">
+      <main>
 
-        <input type="text" placeholder="Habit Name" class="entry" id="habitName">
+        <form id="journalForm">
 
-        <input type="text" placeholder="Date (Format: 1-1-23)" class="entry" id="journalDate">
+          <input type="text" placeholder="Habit Name" class="entry" id="habitName">
+  
+          <input type="text" placeholder="Date (Format: 1-1-23)" class="entry" id="journalDate">
+  
+          <input type="text" placeholder="Time (20 minutes)" class="entry" id="journalTime">
+  
+          <textarea name="journalText" cols="30" rows="10" placeholder="Enter your text here"  id="journalText"></textarea>
+  
+          <br>
+  
+          <button id="newEntryBtn">Submit</button>
+          
+        </form>
 
-        <input type="text" placeholder="Time" class="entry" id="journalTime">
-
-        <textarea name="journalText" cols="30" rows="10" placeholder="Enter your text here"  id="journalText"></textarea>
-
-        <br>
-
-        <button id="newEntryBtn">Submit</button>
-        
-      </form>
+      </main>
 
     </section>
-
-    <aside id="journal-container"></aside>
+    
+    <aside id="journal-container" class="primary-border"></aside>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/public/main.js"></script>
