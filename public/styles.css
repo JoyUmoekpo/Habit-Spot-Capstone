@@ -65,7 +65,7 @@ header {
    padding: 10px;
    position: absolute;
    top: 10%;
-   left: 20%;
+   left: 16%;
 }
 
 #habit-container {
@@ -76,12 +76,15 @@ header {
 }
 
 #home {
-   background-color: var(--tertiary);
+   float: left;
    border-radius: 50%;
-   padding: 25px;
-   text-align: center;
-   width: 55px;
-   color: var(--white);
+   padding: 15px;
+}
+
+#themes {
+   float: right;
+   border-radius: 50%;
+   padding: 15px;
 }
 
 #journalInput {
@@ -102,6 +105,11 @@ header {
    left: 30%;
 }
 
+
+.btnContainer {
+   border-radius: 50%;
+   padding: 10px;
+}
 .center {
    text-align: center;
 }

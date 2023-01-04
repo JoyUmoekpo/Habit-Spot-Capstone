@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,42 +8,60 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.jpg" />
     <link rel="stylesheet" href="/public/styles.css" />
   </head>
-  
+
   <body>
-    <div id="home" onclick="window.location.href='./index.html'">Home</div>
+    <div class="btnContainer">
+      <button id="home" onclick="window.location.href='./index.html'">Home</button>
+      <button id="themes">Theme</button>
+    </div>
 
     <section id="journalInput" class="primary-border">
-      
       <button id="exampleEntry">See Example Journal Entry</button>
 
       <header><h1>New Journal Entry</h1></header>
 
       <main>
-
         <form id="journalForm">
+          <input
+            type="text"
+            placeholder="Habit Name"
+            class="entry"
+            id="habitName"
+          />
 
-          <input type="text" placeholder="Habit Name" class="entry" id="habitName">
-  
-          <input type="text" placeholder="Date (Format: 1-1-23)" class="entry" id="journalDate">
-  
-          <input type="text" placeholder="Time (20 minutes)" class="entry" id="journalTime">
-  
-          <textarea name="journalText" cols="30" rows="10" placeholder="Enter your text here"  id="journalText"></textarea>
-  
-          <br>
-  
+          <input
+            type="text"
+            placeholder="Date (Format: 1-1-23)"
+            class="entry"
+            id="journalDate"
+          />
+
+          <input
+            type="text"
+            placeholder="Time (20 minutes)"
+            class="entry"
+            id="journalTime"
+          />
+
+          <textarea
+            name="journalText"
+            cols="30"
+            rows="10"
+            placeholder="Enter your text here"
+            id="journalText"
+          ></textarea>
+
+          <br />
+
           <button>Submit</button>
-          
         </form>
-
       </main>
-
     </section>
-    
+
     <aside id="journal-container" class="primary-border"></aside>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    
     <script src="/public/journal.js"></script>
+    <script src="/themes.js"></script>
   </body>
 </html>

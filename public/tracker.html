@@ -11,14 +11,12 @@
 </head>
 
 <body>
-   <div id="home" onclick="window.location.href='./index.html'">Home</div>
-   
-   <section id="tracker" class="center primary-border">
-      
-      <!-- <header class="center">
-         <h1>Welcome to Habit Spot, the habit tracker application!</h1>
-      </header> -->
+   <div class="btnContainer">
+      <button id="home" onclick="window.location.href='./index.html'">Home</button>
+      <button id="themes">Theme</button>
+   </div>
 
+   <section id="tracker" class="center primary-border">
       <section>
 
          <button id="all-habits-btn">See Habit Example to get started</button>
@@ -47,6 +45,7 @@
    
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
    <script src="/public/main.js"></script>
+   <script src="/themes.js"></script>
 </body>
 
 </html>
