@@ -21,6 +21,10 @@ button {
    color: var(--white);
    font-size: 15px;
    margin: 8px;
+   padding: 5px;
+   /* may change following later */
+   border-radius: 3px;
+   border: 1px solid var(--primary);
 }
 
 button:hover {
@@ -73,8 +77,8 @@ header {
    background-color: var(--tertiary);
    padding: 10px;
    position: absolute;
-   top: 10%;
-   left: 16%;
+   top: 18%;
+   left: 18%;
 }
 
 #habit-container {
@@ -88,17 +92,19 @@ header {
    float: left;
    border-radius: 50%;
    padding: 15px;
+   width: 70px;
+   height: 70px;
 }
 
-#themes {
-   float: right;
+#themeBtn {
    border-radius: 50%;
-   padding: 15px;
+   width: 70px;
+   height: 70px;
 }
 
 #journalInput {
    background-color: var(--tertiary);
-   padding: 30px;
+   padding: 20px;
    margin-top: 50px;
    position: absolute;
    top: 10%;
@@ -115,8 +121,7 @@ header {
 }
 
 .btnContainer {
-   border-radius: 50%;
-   padding: 10px;
+   float: right;
 }
 
 .center {
