@@ -67,20 +67,23 @@ div > p {
    font-size: medium;
 }
 
+@keyframes slide {
+   0% {
+      transform: translateY(100%);
+   }
+   100% {
+      transform: translateY(0%);
+   }
+
+}
+
 #welcome {
    background-color: var(--tertiary);
    position: absolute;
    padding: 15px;
    top: 40%;
    left: 15%;
-}
-
-#home {
-   float: left;
-   border-radius: 50%;
-   font-size: small;
-   width: 60px;
-   height: 60px;
+   animation: slide 1s ease;
 }
 
 #explanation {
@@ -91,12 +94,22 @@ div > p {
    width: 750px;
    top: 57%;
    left: 18%;
+   animation: slide 1.5s ease;
 }
 
 #trackPageBtn {
    position: absolute;
    top: 80%;
    left: 44%;
+   animation: slide 2s ease;
+}
+
+#home {
+   float: left;
+   border-radius: 50%;
+   font-size: small;
+   width: 60px;
+   height: 60px;
 }
 
 #tracker {
