@@ -9,7 +9,7 @@
 
 body {
    color: var(--white);
-   background-image: url(/assets/background-image-2.jpg);
+   background-image: url(/assets/background-image-1.jpg);
    background-repeat: no-repeat;
    background-size: 1200px 700px;
    font-weight: bold;
@@ -90,7 +90,7 @@ div > p {
    background-color: var(--tertiary);
    position: absolute;
    padding: 8px;
-   text-align: left;
+   text-align: center;
    width: 750px;
    top: 57%;
    left: 18%;
@@ -99,7 +99,7 @@ div > p {
 
 #trackPageBtn {
    position: absolute;
-   top: 80%;
+   top: 70%;
    left: 44%;
    animation: slide 2s ease;
 }
@@ -151,7 +151,7 @@ div > p {
    padding: 15px;
    position: absolute;
    top: 10%;
-   left: 35%;
+   left: 25%;
    border-radius: 7%;
 }
 

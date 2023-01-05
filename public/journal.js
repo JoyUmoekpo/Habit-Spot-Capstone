@@ -4,6 +4,9 @@ const allJournalsBtn = document.querySelector("#exampleEntry");
 
 const journalBaseURL = `http://localhost:4000/api/journals`;
 
+alert("Click on the 'See Your Journals' button to see an example journal entry.")
+
+
 const journalsCallback = ({ data: journals }) => {
 	displayJournals(journals);
 }

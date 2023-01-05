@@ -1,8 +1,10 @@
 const habitsContainer = document.querySelector("#habit-container");
 const habitForm = document.querySelector("#habitForm");
-const allHabitsBtn = document.querySelector("#all-habits-btn");
+const habitsBtn = document.querySelector("#habits-btn");
 
 const habitBaseURL = `http://localhost:4000/api/habits`;
+
+alert("Click on the 'See Your Habits' button to see an example habit.")
 
 const habitsCallback = ({ data: habits }) => {
 	displayHabits(habits);
@@ -78,4 +80,4 @@ const displayHabits = (arr) => {
 };
 
 habitForm.addEventListener("submit", habitSubmitHandler);
-allHabitsBtn.addEventListener("click", getHabits);
+habitsBtn.addEventListener("click", getHabits);
