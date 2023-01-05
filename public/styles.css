@@ -59,6 +59,14 @@ footer > button {
    padding: 7px;
 }
 
+div > h2 {
+   text-decoration: underline var(--primary);
+}
+
+div > p {
+   font-size: medium;
+}
+
 #welcome {
    background-color: var(--tertiary);
    position: absolute;
@@ -122,6 +130,20 @@ footer > button {
    height: 465px;
    top: 18%;
    left: 30%;
+}
+
+#tools {
+   background-color: var(--tertiary);
+   text-align: center;
+   padding: 15px;
+   position: absolute;
+   top: 10%;
+   left: 35%;
+   border-radius: 7%;
+}
+
+#links {
+   text-decoration: underline var(--primary);
 }
 
 .themeBtn {
