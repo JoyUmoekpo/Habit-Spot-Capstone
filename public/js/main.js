@@ -6,25 +6,19 @@ const habitBaseURL = `http://localhost:4000/api/habits`;
 
 const habitsCallback = ({ data: habits }) => {
 	displayHabits(habits);
-}
+};
 
 const errCallback = (err) => {
 	console.log(err.response.data);
-}
+};
 
 const getHabits = () => {
-	axios
-	.get(habitBaseURL)
-	.then(habitsCallback)
-	.catch(errCallback);
-}
+	axios.get(habitBaseURL).then(habitsCallback).catch(errCallback);
+};
 
 const createHabit = (body) => {
-	axios
-	.post(habitBaseURL, body)
-	.then(habitsCallback)
-	.catch(errCallback);
-}
+	axios.post(habitBaseURL, body).then(habitsCallback).catch(errCallback);
+};
 
 const updateHabit = (id, type) => {
 	axios
@@ -33,14 +27,11 @@ const updateHabit = (id, type) => {
 		})
 		.then(habitsCallback)
 		.catch(errCallback);
-}
+};
 
 const deleteHabit = (id) => {
-	axios
-	.delete(`${habitBaseURL}/${id}`)
-	.then(habitsCallback)
-	.catch(errCallback);
-}
+	axios.delete(`${habitBaseURL}/${id}`).then(habitsCallback).catch(errCallback);
+};
 
 const habitSubmitHandler = (e) => {
 	e.preventDefault();

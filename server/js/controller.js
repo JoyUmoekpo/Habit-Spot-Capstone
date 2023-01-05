@@ -1,5 +1,5 @@
-const habits = require("./habitdb.json");
-const journals = require("./journaldb.json");
+const habits = require("./json/habitdb.json");
+const journals = require("./json/journaldb.json");
 
 let habitId = 2;
 let journalId = 2;
