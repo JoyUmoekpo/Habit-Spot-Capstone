@@ -13,4 +13,3 @@ themeBtn2.addEventListener("click", () => {
 themeBtn3.addEventListener("click", () => {
   document.body.style.backgroundImage = "url('/assets/background-image-15.jpg')";
 });
-

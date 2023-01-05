@@ -63,9 +63,8 @@ const createHabitCard = (habit) => {
 	<img alt='Image' src=${habit.image} class="habit-cover" />
   <p>${habit.habit}</p>
   <p>${habit.time}</p>
-  <p>Days: ${habit.days}</p>
-  <button onclick="updateHabit(${habit.id}, 'plus')" id="days" type="plus">+</button>
-  <button onclick="window.location.href='./journal.html'">Add Journal Entry</button>
+  <p class="numCount">Days: ${habit.days}</p>
+  <button onclick="updateHabit(${habit.id}, 'plus')" id="days" class="numCount plus" type="plus">+</button>
   <button onclick="deleteHabit(${habit.id})">Delete Habit</button>
   `;
 	habitsContainer.appendChild(habitCard);

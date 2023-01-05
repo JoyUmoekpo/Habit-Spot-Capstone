@@ -21,8 +21,8 @@ button {
    color: var(--white);
    font-size: 15px;
    margin: 8px;
+   margin-bottom: 15px;
    padding: 5px;
-   /* may change following later */
    border-radius: 3px;
    border: none;
 }
@@ -30,6 +30,10 @@ button {
 button:active {
    background-color: var(--primary);
    transform: translateY(7px);
+}
+
+summary {
+   margin-top: 25px;
 }
 
 input {
@@ -45,12 +49,30 @@ header {
    color: var(--white);
 }
 
+footer {
+   position: absolute;
+   bottom: 5px;
+   left: 47%;
+}
+
+footer > button {
+   padding: 7px;
+}
+
 #welcome {
    background-color: var(--tertiary);
    position: absolute;
    padding: 15px;
    top: 40%;
    left: 15%;
+}
+
+#home {
+   float: left;
+   border-radius: 50%;
+   font-size: small;
+   width: 60px;
+   height: 60px;
 }
 
 #explanation {
@@ -82,14 +104,6 @@ header {
    flex-wrap: wrap;
    position: absolute;
    padding: 13px;
-}
-
-#home {
-   float: left;
-   border-radius: 50%;
-   font-size: small;
-   width: 60px;
-   height: 60px;
 }
 
 #journalInput {
@@ -145,7 +159,8 @@ header {
    background-color: var(--primary);
    color: var(--secondary);
    width: 180px;
-   margin: 14px;
+   margin: 15px;
+   margin-right: 41px;
    align-items: center;
    border-radius: 30px;
    border-top-left-radius: 30px;
@@ -159,6 +174,10 @@ header {
    border-top-right-radius: 30px;
 }
 
+.numCount {
+   display: inline-block;
+}
+
 .entry {
    display: flex;
    flex-direction: column;
@@ -168,11 +187,10 @@ header {
 .journal-card {
    background-color: var(--secondary);
    font-size: medium;
-   text-align: center;
    width: 160px;
    height: 160px;
    margin: 10px;
-   padding: 5px;
+   padding: 15px;
    align-items: center;
    border-radius: 5px;
    border-top-left-radius: 5px;
