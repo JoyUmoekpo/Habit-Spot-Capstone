@@ -1,15 +1,22 @@
-let theme1 = document.querySelector("#theme1")
-let theme2 = document.querySelector("#theme2")
-let theme3 = document.querySelector("#theme3")
+const themeBtn1 = document.querySelector("#theme1")
+const themeBtn2 = document.querySelector("#theme2")
+const themeBtn3 = document.querySelector("#theme3")
+const allThemeBtns = document.querySelector(".themeBtn")
 
-// const changeTheme = () => {
-//   const theme1 = "background-image-1.jpg";
-//   const theme2 = "background-image-2.jpg";
-//   const theme3 = "background-image-3.jpg";
+const themeHandler = (e) => {
+	e.preventDefault();
+};
 
-//   document.body.style.backgroundColor = `${theme1}, ${theme2}, ${theme3}`;
-// }
-
-newTheme.addEventListener("click", () => {
-  document.body.style.backgroundImage = "url('assets/background-image-1.jpg')", "url('assets/background-image-2.jpg')", "url('assets/background-image-3.jpg')";
+themeBtn1.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url('/assets/background-image-2.jpg')";
 });
+
+themeBtn2.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url('/assets/background-image-5.jpg')";
+});
+
+themeBtn3.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url('/assets/background-image-15.jpg')";
+});
+
+allThemeBtns.addEventListener("click", themeHandler);

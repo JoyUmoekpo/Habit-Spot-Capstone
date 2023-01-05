@@ -9,7 +9,7 @@
 
 body {
    color: var(--white);
-   background-image: url(/assets/background-image-4.jpg);
+   background-image: url(/assets/background-image-2.jpg);
    background-repeat: no-repeat;
    background-size: 1200px 700px;
    font-weight: bold;
@@ -78,7 +78,7 @@ header {
    padding: 10px;
    position: absolute;
    top: 15%;
-   left: 18%;
+   left: 15%;
 }
 
 #habit-container {
@@ -90,13 +90,6 @@ header {
 
 #home {
    float: left;
-   border-radius: 50%;
-   font-size: small;
-   width: 60px;
-   height: 60px;
-}
-
-.themeBtn {
    border-radius: 50%;
    font-size: small;
    width: 60px;
@@ -119,6 +112,13 @@ header {
    height: 465px;
    top: 18%;
    left: 30%;
+}
+
+.themeBtn {
+   border-radius: 50%;
+   font-size: small;
+   width: 60px;
+   height: 60px;
 }
 
 .btnContainer {
@@ -148,8 +148,8 @@ header {
 .habit-card {
    background-color: var(--primary);
    color: var(--secondary);
-   width: 160px;
-   margin: 7px;
+   width: 180px;
+   margin: 14px;
    align-items: center;
    border-radius: 30px;
    border-top-left-radius: 30px;
@@ -157,8 +157,8 @@ header {
 }
 
 .habit-cover {
-   width: 160px;
-   height: 90px;
+   width: 180px;
+   height: 130px;
    border-top-left-radius: 30px;
    border-top-right-radius: 30px;
 }
