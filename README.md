@@ -1,13 +1,17 @@
 # Habit-Tracker-Journal-Foundations-Capstone
 
-# Advice-Corner
 [![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![GitHub latest commit](https://img.shields.io/github/last-commit/JoyUmoekpo/Habit-Tracker-Journal-Foundations-Capstone
 )](https://github.com/JoyUmoekpo/Habit-Tracker-Journal-Foundations-Capstone/commit/main)
 
 ## Description
-Welcome to Advice Corner! This application uses the Advice Slip JSON API to generate advice for the user. Upon refreshing, the user will be given a unique piece of advice.
+Welcome to Habit Spot!
+
+Habits can be hard to keep. So, I created HabitSpot as a solution to help users better track and journal about their progress with their chosen habits.
+
+I was motivated to create HabitSpot because maintaining personal habits is important to me and I enjoy journaling to process my thoughts. For that reason, I combined these two things to form Habit Spot.
+
 ## Table of Contents
 * [Technologies Used](#technologies-used)
 * [Respoitory Link](#repository-link)
@@ -31,7 +35,7 @@ Welcome to Advice Corner! This application uses the Advice Slip JSON API to gene
 * Cors
 * JSON
 
-## Respository Link
+## Repository Link
 * This is the repository link for this application: [Habit Spot Repository](https://github.com/JoyUmoekpo/Habit-Tracker-Journal-Foundations-Capstone)
 
 ## Features
