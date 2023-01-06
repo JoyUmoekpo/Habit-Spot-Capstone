@@ -59,7 +59,7 @@ footer > button {
    padding: 7px;
 }
 
-div > h2 {
+div > h3 {
    text-decoration: underline var(--primary);
 }
 
