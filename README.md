@@ -1,4 +1,4 @@
-# Habit-Tracker-Journal-Foundations-Capstone
+# Habit-Spot-Capstone
 
 [![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
