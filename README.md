@@ -51,10 +51,9 @@ Welcome to Advice Corner! This application uses the Advice Slip JSON API to gene
 * Unit testing
 
 ## Application Image(s)
-![Homepage](./assets/)
-![Tracker Pacge](./assets/)
-![Journal Page](./assets/)
-![Homepage](./assets/)
+![Homepage](./assets/homepage.jpg)
+![Tracker Pacge](./assets/tracker.jpg)
+![Journal Page](./assets/journal.jpg)
 
 ## Contributing
 * I'm open to contributions!
@@ -69,7 +68,7 @@ If you have any questions, feel free to contact me by using the information list
 * LinkedIn: https://www.linkedin.com/in/joyumoekpo/
 
 ## Credits
-* Unsplash / Favicon: 
+* Unsplash / Favicon: https://unsplash.com/photos/pTb54lkyuNQ
 
 ## License
 ### MIT License
