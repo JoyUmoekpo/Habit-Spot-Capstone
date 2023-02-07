@@ -56,7 +56,7 @@ const createJournalCard = (journal) => {
 	const journalCard = document.createElement("div");
 	journalCard.classList.add("journal-card");
 	journalCard.innerHTML =`
-	<h>Journal Entry for ${journal.habit} (${journal.time}) on ${journal.date}</h>
+	<p>Journal Entry for ${journal.habit} (${journal.time}) on ${journal.date}</p>
   <p>${journal.text}</p>
   `;
 	journalContainer.appendChild(journalCard);
