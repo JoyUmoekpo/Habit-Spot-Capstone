@@ -14,7 +14,7 @@ I was motivated to create HabitSpot because maintaining personal habits is impor
 
 ## Table of Contents
 * [Technologies Used](#technologies-used)
-* [Respoitory Link](#repository-link)
+* [Repository Link](#repository-link)
 * [Features](#features)
 * [Future Developments](#future-developments)
 * [Application Images](#application-images)
